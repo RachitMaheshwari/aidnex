@@ -1,0 +1,182 @@
+/*////////////         Left side fixed button     /////////////////////*/
+.left-side-enquiry-btn{
+	position: fixed;
+	top: 50%;
+	left: -50px;
+	transform: translateY(-50%) rotate(-90deg);
+	z-index: 11;
+}
+/*////////////         Left side fixed button     /////////////////////*/
+
+
+/*///////////       toggle contact form     /////////////////////*/
+.toggle-form {
+	position: fixed;
+	top: 0;
+	background: rgba(1, 1, 1, 0.9);z-index: 111;
+	display: none;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .toggle-form form{
+  	background-color: white;
+    max-width: 400px;
+    width: 95%;
+  }
+
+.toggle-form form input[type="text"], .toggle-form form input[type="email"], .toggle-form form input[type="tel"], .toggle-form form input[type="url"], .toggle-form form textarea, .toggle-form form button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+.toggle-form form {
+	/*background:#F9F9F9;*/
+	padding:25px;
+	margin:50px 0;
+	position: relative;
+}
+.toggle-form form .close{
+	position: absolute;
+	top: -30px;
+	right: 10px;
+}
+.toggle-form form .close img{
+	width: 50px;
+	color: white;
+	cursor: pointer;
+}
+
+.toggle-form form h3 {
+	color: var(--primary-color);
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.toggle-form form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+	color: white;
+}
+
+.toggle-form fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+.toggle-form form input[type="text"], .toggle-form form input[type="email"], .toggle-form form input[type="tel"], .toggle-form form input[type="url"], .toggle-form form textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+.toggle-form form input[type="text"]:hover, .toggle-form form input[type="email"]:hover, .toggle-form form input[type="tel"]:hover, .toggle-form form input[type="url"]:hover, .toggle-form form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+.toggle-form form textarea {
+	height:100px;
+	max-width:100%;
+    resize:none;
+}
+
+.toggle-form form .form-submit {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#f14e23;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+.toggle-form form button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+.toggle-form form input:focus, .toggle-form form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+.toggle-form form::-webkit-input-placeholder {
+ color:#888;
+}
+.toggle-form form:-moz-placeholder {
+ color:#888;
+}
+.toggle-form form::-moz-placeholder {
+ color:#888;
+}
+.toggle-form form:-ms-input-placeholder {
+ color:#888;
+}
+/*///////////       toggle contact form     /////////////////////*/
+
+
+
+/*Preloader*/
+.preloader{
+	height: 100vh;
+	width: 100%;
+	background: #ecf0f1;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+  opacity: 1!important;
+}
+
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #193b48;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
+}

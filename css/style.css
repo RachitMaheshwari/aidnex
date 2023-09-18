@@ -1,0 +1,199 @@
+/*//////////////////     Home Section       ////////////////////////*/
+.home{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+}
+.home::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-image: linear-gradient(to right, black , white),url('../img/main.jpg');
+  background-blend-mode: multiply;
+	z-index: -1;
+}
+.home h1{
+	font-size: clamp(30px, 3.5vw, 60px);
+	text-transform: uppercase;
+	font-weight: 1000;
+}
+.main-cards .card-body{
+	position: relative;
+}
+.main-cards .card-body span{
+	position: absolute;
+	height: 40px;
+	width: 50px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	top: -20px;
+	left: 0;
+	background-color: var(--primary-color);
+}
+.main-cards .card-body span svg{
+	font-size: 22px;
+	color: white;
+	margin-top: 8px;
+	margin-left: -5px;
+}
+.main-cards .card img{
+	height: 180px;
+	object-fit: cover;
+}
+/*//////////////////     Home Section       ////////////////////////*/
+
+
+/*//////////////////     Our Story Section       ////////////////////////*/
+.story-cards{
+	min-height: 150px;
+	text-align: center;
+}
+.story-cards img, .story-cards svg{
+	width: 50px;
+	font-size: 45px;
+}
+/*Our story section form*/
+.our-story form{
+	width: 100%;
+	padding: 10%;
+	margin-top: 40px;
+}
+.our-story form input, .our-story form textarea{
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	width: 100%;
+}
+.our-story form input::placeholder, .our-story form textarea::placeholder{
+	color: rgba(1, 1, 1, 0.4);
+}
+/*//////////////////     Our Story Section       ////////////////////////*/
+
+
+/*//////////////////    Services section       ////////////////////////*/
+.services .cards p{
+	min-height: 110px;
+}
+.services .cards p{
+	font-weight: 350;
+}
+/*//////////////////    Services section       ////////////////////////*/
+
+
+/*//////////////////    Counter and map section       ////////////////////////*/
+.tag-line h1{
+  border-left: 5px solid red;
+  width: 90%;
+  font-size: 44px;
+  margin-left: 1%;
+}
+.map{
+  width: 90%;
+  margin: auto;
+}
+@media(max-width: 1024px){
+  .tag-line h1{
+    width: 70%;
+  }
+}
+@media(max-width: 724px){
+  .tag-line h1{
+    width: 95%;
+  }
+}
+/*//////////////////    Counter and map section       ////////////////////////*/
+
+
+/*////////////    Sectors buttons positioning and carousel setup     ///////////////*/
+.sectors .carousel-indicators [data-bs-target]{
+	width: auto;
+	height: auto;
+	margin: 0 15px;
+  text-indent: 0;
+}
+.sectors .carousel-indicators{
+	height: 100px;
+	top: -100px;
+}
+.sectors .carousel-indicators svg{
+	height: 60px;
+	width: auto;
+}
+
+.sectors .carousel-item{
+	width: 100%;
+	min-height: 50vh;
+}
+.sectors button.active, .sectors button:hover {
+	border-bottom: 2px solid var(--primary-color);
+}
+.inner-sector-carousel{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: left;
+}
+.sectors .carousel-item .sectors-img img{
+	height: 100%;
+	width: 100%;
+}
+.sectors .carousel-item .sectors-text{
+	padding: 4%;
+}
+
+@media(max-width: 768px){
+	.sectors .carousel-item .sectors-img, .sectors .carousel-item .sectors-text{
+		width: 100%;
+	}
+	.sectors .carousel-item .sectors-text{
+		height: auto;
+	}
+	.sectors .carousel-indicators svg{
+		height: 50px;
+		width: auto;
+	}
+}
+
+@media(max-width: 300px){
+	.sectors .carousel-indicators svg{
+		height: 35px;
+		width: auto;
+	}
+}
+/*////////////    Sectors buttons positioning and carousel setup     ///////////////*/
+
+
+/*////////////     Client section  ////////////*/
+.clients img{
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: contain;
+  height: 100px;
+}
+.item{
+  padding: 20px;
+}
+
+@media(max-width: 400px){
+	.item{
+	  padding: 10px;
+	}
+}
+/*////////////     Client section  ////////////*/
+
+
+
+/*constellation-section*/
+.constellation-sec{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+/*constellation-section*/

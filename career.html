@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIDNEX | CAREER</title>
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./css/components.css">
+  <link rel="stylesheet" type="text/css" href="./css/icons.min.css">
+</head>
+<style type="text/css">
+  .career-sec{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+  }
+
+  .career-cards .card img{
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+  }
+
+</style>
+<body>
+
+<!-- Contact form Toggalable -->
+<div class="toggle-form">  
+  <form class="myForm" id="contactForm1" action="https://formsubmit.co/abhijeetnegi21@gmail.com" method="POST">
+    <div class="close"><img src="./img/close.svg"></div>
+    <h3>Quick Contact</h3>
+    <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <fieldset>
+      <input placeholder="Your name" id="inputName" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" id="inputEmail" type="email" required tabindex="2" >
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" id="inputNumber" type="tel" pattern="[6-9]{1}[0-9]{9}" required tabindex="3" >
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here..." id="inputMessage" required tabindex="5" ></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="button" onclick="validate(this)" id="contact-submit" class="main-color-btn form-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form> 
+</div>
+<!-- Contact form Toggalable -->
+
+
+<!-- Left side fixed button -->
+<button class="btn main-color-btn left-side-enquiry-btn openForm">Client Enquiry</button>
+<!-- Left side fixed button -->
+
+
+<!-- Navbar -->
+<nav class="navbar container-fluid navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home"><img src="./img/logos/main-logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#industries">Industries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="career.html">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#aboutus">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item nav-btn">
+          <button type="button " class="btn main-color-btn openForm">Client Enquiry</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<style type="text/css">
+  .banner{
+    min-height: 45vh;
+    position: relative;
+    background-image: linear-gradient(to right, orange , orange),url('./img/people.svg');
+    background-blend-mode: screen;
+    background-position: 100%;
+    background-repeat: no-repeat;
+  }
+  .banner h1{
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+  }
+  .banner span{
+    font-size: 50px;
+  }
+</style>
+<div class="container-fluid banner">
+  <div class="container">
+    <h1>Working At <span class="logo-color-text">Aidnex</span></h1>
+  </div>
+</div>
+
+<div class="container career mb-5 mt-5">
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="./img/rider.jpg" class="h-100 w-100">
+    </div>
+    <div class="col-lg-8 career-sec">
+      <p class="logo-text">Passionate, earnest, and innovative. Is this how you see yourself?</p>
+      <p>If yes, we’re looking for you!<br>
+        <br>We operate across the country. Whether you are in a metro or in a township, we are certain there is a career opportunity in Aidnex tailor-made for you!<br><br><br>
+        Send us your CV on  <a href="mailto:hr@aidnex.com">hr@aidnex.com</a></p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Career Cards-->
+<div class="container mt-5 text-center mb-4  overflow-hidden career-cards">
+  <div class="row">
+    <h1>Why should you join us?</h1><br>
+  </div>
+  <div class="row text-center justify-content-center">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+      <div class="card">
+        <img src="./img/envir.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Building an inclusive and diverse working environment - is important
+          to us.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+      <div class="card">
+        <img src="./img/growth.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Providing opportunity for growth and self-empowerment - is important
+          to us.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12 col mb-4">
+      <div class="card">
+        <img src="./img/workplace2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Creating a culture  where  work, fun, and joy come together - is important to us.&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Career Cards-->
+
+
+<!-- Footer -->
+<div class="container-fluid footer overflow-hidden">
+  <footer class="footer-distributed">
+      <div class="footer-left" data-aos="fade-up">
+        <h3 class="logo"><img src="./img/logos/main-logo.png"></h3><br>
+        <h6 style="color: var(--primary-color);">AIDNEX INNOVATIVE SOLUTIONS PVT LTD.</h6>
+        <p class="footer-links">
+          <a href="index.html#home" class="link-1">Home</a>
+          <a href="index.html#services">Services</a>       
+          <a href="career.html">Career</a>        
+          <a href="contactus.html">Contact Us</a>          
+        </p>
+        <p class="footer-company-name"><button class="main-color-btn btn openForm">Client Enquiry</button></p>
+      </div>
+
+      <div class="footer-center" data-aos="fade-up" data-aos-duration="1500">
+        <div>
+          <i class="fa fa-map-marker"></i>&nbsp;
+          <p><b>Registered office: </b></p><br><br>
+          <p>House No. 510, Ground Floor<br> Fatehpur Beri
+          South West Delhi,<br>India-110074
+          </p><br><br>
+
+          <p><b>Corporate office: </b></p><br><br>
+          <p>32A,B1, Ground Floor,<br> Spaze I Tech Park Sector 49,<br> Sohna Road Gurgaon 122018</p>
+        </div>
+        <br>
+        <div>
+          <i class="fa fa-phone"></i>&nbsp;
+          <p>+91-1244068227</p>
+        </div><br>
+        <div>
+          <i class="fa fa-envelope"></i>&nbsp;
+          <p><a href="mailto:support@company.com">info@aidnex.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right" data-aos="fade-up" data-aos-duration="2000">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          We are India’s leading on-demand and same day logistics company<br>We offer last mile delivery solutions for businesses
+        </p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/aidnexinnovative"><img src="./img/icons8-facebook.svg"></a>
+          <a href="https://www.instagram.com/aidnexinnovative/"><img src="./img/icons8-instagram.svg"></a>
+          <a href="https://twitter.com/Aidnex1"><img src="./img/icons8-twitter.svg"></a>
+          <a href="https://www.linkedin.com/company/79915827/admin/"><img src="./img/icons8-linkedin-circled.svg"></a>
+        </div>
+      </div>
+    </footer>
+  <hr>
+  <div class="row text-center copyright">
+    <p>© 2022 Copyright: www.aidnex.com</p>
+  </div>
+</div>
+<!-- Footer -->
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script type="text/javascript" src="./js/icons.min.js"></script>
+
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/email.js"></script>
+</body>
+</html>
